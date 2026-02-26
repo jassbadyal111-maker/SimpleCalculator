@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
 
         val layout = LinearLayout(this)
         layout.orientation = LinearLayout.VERTICAL
-        layout.setPadding(32, 32, 32, 32)
+        layout.setPadding(50, 50, 50, 50)
 
         val num1 = EditText(this)
         num1.hint = "First Number"
@@ -29,10 +29,11 @@ class MainActivity : AppCompatActivity() {
             val n1 = num1.text.toString().toDoubleOrNull()
             val n2 = num2.text.toString().toDoubleOrNull()
 
-            result.text = if (n1 != null && n2 != null)
+            result.text = if (n1 != null && n2 != null) {
                 "Result: ${n1 + n2}"
-            else
+            } else {
                 "Enter valid numbers"
+            }
         }
 
         layout.addView(num1)
