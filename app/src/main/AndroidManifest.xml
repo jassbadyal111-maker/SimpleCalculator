@@ -3,7 +3,7 @@
 
     <application
         android:label="Simple Calculator"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        android:theme="@android:style/Theme.Material.Light">
 
         <activity
             android:name=".MainActivity"
